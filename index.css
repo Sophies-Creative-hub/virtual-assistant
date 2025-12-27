@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+@theme {
+  /* Navy Colors */
+  --color-navy-800: #1B2A41;
+  --color-navy-900: #0F1A2A;
+  
+  /* Terracotta Colors */
+  --color-terracotta-400: #EDA48E;
+  --color-terracotta-500: #E07A5F;
+  --color-terracotta-600: #C45D42;
+  
+  /* Cream Colors */
+  --color-cream-50: #FDFCF6;
+  --color-cream-100: #F4F1DE;
+  --color-cream-200: #EAE6CD;
+  
+  /* Font Families */
+  --font-family-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-serif: 'Playfair Display', Georgia, serif;
+}
+
+.watercolor-blob {
+        filter: blur(40px);
+        opacity: 0.6;
+        mix-blend-mode: multiply;
+        animation: float 10s ease-in-out infinite;
+      }
+      @keyframes float {
+        0% { transform: translate(0, 0) scale(1); }
+        50% { transform: translate(20px, -20px) scale(1.1); }
+        100% { transform: translate(0, 0) scale(1); }
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Watercolor Background als Custom Class */
+.bg-watercolor {
+    background-image: url('https://www.transparenttextures.com/patterns/watercolor.png');
+}

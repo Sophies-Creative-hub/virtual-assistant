@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import './index.css'
+import '@fontsource/dm-sans/400.css'
+import '@fontsource/dm-sans/700.css'
+import '@fontsource/playfair-display/400.css'
+import '@fontsource/playfair-display/700.css'
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
