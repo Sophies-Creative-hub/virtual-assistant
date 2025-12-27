@@ -5,71 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sarah Doe | Virtuelle Assistenz</title>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              navy: {
-                800: '#1B2A41',
-                900: '#0F1A2A',
-              },
-              terracotta: {
-                400: '#EDA48E',
-                500: '#E07A5F',
-                600: '#C45D42',
-              },
-              cream: {
-                50: '#FDFCF6',
-                100: '#F4F1DE',
-                200: '#EAE6CD',
-              }
-            },
-            fontFamily: {
-              sans: ['DM Sans', 'sans-serif'],
-              serif: ['Playfair Display', 'serif'],
-            },
-            backgroundImage: {
-              'watercolor': "url('https://www.transparenttextures.com/patterns/watercolor.png')",
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-      .watercolor-blob {
-        filter: blur(40px);
-        opacity: 0.6;
-        mix-blend-mode: multiply;
-        animation: float 10s ease-in-out infinite;
-      }
-      @keyframes float {
-        0% { transform: translate(0, 0) scale(1); }
-        50% { transform: translate(20px, -20px) scale(1.1); }
-        100% { transform: translate(0, 0) scale(1); }
-      }
-      .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-      }
-      .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/"
-  }
-}
-</script>
+
+  <script type="module" crossorigin src="/virtual-assistant/assets/index-BRvBKB8z.js"></script>
+  <link rel="stylesheet" crossorigin href="/virtual-assistant/assets/index-CW415goF.css">
 </head>
   <body class="bg-cream-50 text-navy-800 antialiased selection:bg-terracotta-400 selection:text-white">
     <div id="root"></div>
